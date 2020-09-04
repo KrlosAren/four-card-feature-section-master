@@ -1,7 +1,12 @@
+.main
+  width 100%
+  height 100vh
+  border 1px solid transparent
+
 header
   width 80%
   height 180px
-  margin 0 auto
+  margin 10px auto
   display flex
   flex-direction column
   align-items center
@@ -21,11 +26,9 @@ header
     mixin-typo(font-weight-200,font-15,font-poppins, color-very-dark-blue)
 
 .content
-  max-width 1200px
   width 80%
-  height calc(100vh - 295px)
-  margin 0 auto
-  height auto
+  height calc(100vh - 300px)
+  margin 20px auto
   display flex
   align-items center
   justify-content center
@@ -53,14 +56,13 @@ header
 
 footer
   width 100%
-  height 35px
+  padding 20px
   display flex
   justify-content center
   align-items center
   p
     mixin-typo(font-weight-200,12px,font-poppins, color-very-dark-blue)
   a
-    width 100%
     text-decoration none
     mixin-typo(font-weight-600,13px,font-poppins, color-blue)
     &:hover
