@@ -23,13 +23,19 @@ _Now see the project in_ **localhost:4500**
 
 You can see the live result here → [Article Preview Component](https://github.com/KrlosAren/four-card-feature-section-master)
 
-🖥 Desktop version
+<details>
+    <summary>🖥 Desktop version</summary>
 
 ![](./src/assets/design/desktop-design.jpg)
+</details>
 
-📱 Mobile version
+<details>
+    <summary>📱 Mobile version</summary>
 
-![](./src/assets/design/desktop-design.jpg)
+  ![](./src/assets/design/desktop-design.jpg)
+</details>
+
+  
 
 ## :pill: Technologies
 1. HTML

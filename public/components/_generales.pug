@@ -3,4 +3,4 @@ mixin card(title,info,icon)
     .container__title
       h3= title
       p= info
-    .container__icon: img(src='../../src/assets/'+icon)
+    .container__icon: img(src=require('../src/assets/'+icon).default)
