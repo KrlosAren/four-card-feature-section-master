@@ -1,0 +1,33 @@
+include ./components/_generales.pug
+
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet")
+    link(rel="shortcut icon", href=require("../src/assets/favicon-32x32.png").default, type="image/x-icon")
+    title Frontend Mentor | Four card feature section
+  body
+    header
+      h1
+        | Reliable, efficient delivery 
+      h2
+        | Powered by Technology
+      p
+        | Our Artificial Intelligence powered tools use millions of project data points  
+        | to ensure that your project is successful
+    section.content
+      .content__left
+        +card('Supervisor','Monitors activity to identify project roadblocks','icon-supervisor.svg')
+      .content__middle
+        +card('Team Builder','Scans our talent network to create the optimal team for your project','icon-team-builder.svg')
+        +card('Karma','Regularly evaluates our talent to ensure quality','icon-karma.svg')
+      .content__right
+        +card('Calculator','Uses data from past projects to provide better delivery estimates','icon-calculator.svg')
+    footer
+      p
+        | Challenge by   
+        a(href='https://www.frontendmentor.io?ref=challenge' target="_blank")   Frontend Mentor
+        br     
+        | Coded by    
+        a(href="https://www.github.com/KrlosAren" target="_blank")   Carlos L. Zavarce

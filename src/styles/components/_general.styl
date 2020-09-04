@@ -1,0 +1,67 @@
+header
+  width 80%
+  height 180px
+  margin 0 auto
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+
+  h1
+    margin 0
+    mixin-typo(font-weight-200,26px,font-poppins, color-very-dark-blue)
+
+  h2
+    margin 0
+    mixin-typo(font-weight-600,26px,font-poppins, color-very-dark-blue)
+
+  p
+    width 45%
+    text-align center
+    mixin-typo(font-weight-200,font-15,font-poppins, color-very-dark-blue)
+
+.content
+  max-width 1200px
+  width 80%
+  height calc(100vh - 295px)
+  margin 0 auto
+  height auto
+  display flex
+  align-items center
+  justify-content center
+
+  &__left
+    display flex
+    &> .container::before
+      mixin-border-color(color-cyan)
+
+  &__middle
+    width 400px
+    display flex
+    flex-direction column
+    justify-content space-between
+    align-items center
+    &> .container:nth-child(1)::before
+      mixin-border-color(color-red)
+    &> .container:nth-child(2)::before
+      mixin-border-color(color-orange)
+
+  &__right
+    display flex
+    &> .container::before
+      mixin-border-color(color-blue)
+
+footer
+  width 100%
+  height 35px
+  display flex
+  justify-content center
+  align-items center
+  p
+    mixin-typo(font-weight-200,12px,font-poppins, color-very-dark-blue)
+  a
+    width 100%
+    text-decoration none
+    mixin-typo(font-weight-600,13px,font-poppins, color-blue)
+    &:hover
+      border 1px dashed color-blue
